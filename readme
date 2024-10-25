@@ -1,294 +1,35 @@
 Menu 
+El objetivo de un menu responsive es que se pueda ver bien en todo tipo de dispositivos en un dispositivo móvil y hasta 768px se ve en columna y de ahí en adelante o un dispositivo más grande se debe ver en fila
 
 Vamos a utilizar las @keyframes para realizar las animaciones de sitio web
 
-<section id="nosotros">
+.cont-slider {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
 
-        <div class="margin">
+    .fondo {
+        height: 170px;
+        width: 170px;
+        background-color: rgb(184, 173, 173);
+        padding: var(--espacioPadding);
 
-            <!-- <div class="section_title">
-                <h2>Nosotros</h2>
-            </div> -->
+        overflow: hidden;
 
-            <!-- <article class="fotos-instalaciones">
+        .rombo {
+            height: 120px;
+            width: 120px;
+            background-color: rgb(35, 136, 97);
+            transform: rotate(45deg);
+            position: relative;
+        }
 
-                <div class="cont-slider contain_img">
+        img {
+            position: absolute;
+            top: 26px;
+            left: 9px;
+            transform: rotate(-45deg);
+        }
+    }
+}
 
-                    <img src="img/proyecto-1.jpg" alt="">
-
-                </div>
-
-            </article> -->
-
-            <!-- <div class="content-cards-rows">
-                <article class="card">
-                    <h2>Misión</h2>
-                    <p>
-                        Nuesto objetivo corporativo es devolver a su vehículo la originalidad y el valor que representa
-                        para usted. la misión de un taller de reparación de colisiones es devolver los vehículos a la
-                        carretera de manera segura y eficiente, brindando un servicio excepcional a los clientes
-                    </p>
-                </article>
-                <article class="card">
-                    <h2>Visión</h2>
-                    <p>
-                        1. **Calidad y Seguridad**: El taller se compromete a realizar reparaciones de alta calidad y a
-                        garantizar la seguridad de los vehículos reparados. Esto implica utilizar piezas originales o de
-                        alta calidad, seguir procedimientos estándar y cumplir con las regulaciones de seguridad.
-
-                        2. **Excelencia en la Reparación**: El objetivo es devolver los vehículos a sus propietarios en
-                        condiciones óptimas. Esto incluye reparar daños estructurales, pintura, sistemas eléctricos y
-                        mecánicos.
-
-                        3. **Atención al Cliente**: Los talleres de reparación de colisiones deben ofrecer un excelente
-                        servicio al cliente. Esto implica comunicación clara, estimaciones precisas, plazos de entrega
-                        cumplidos y satisfacción del cliente.
-
-                        4. **Profesionalismo y Ética**: El taller debe operar de manera ética y profesional. Esto
-                        incluye tratar a los clientes con respeto, ser transparente sobre los costos y mantener altos
-                        estándares de integridad.
-
-                        6. **Sostenibilidad**: Algunos talleres también se preocupan por minimizar su impacto ambiental.
-                        Pueden utilizar prácticas sostenibles, como el reciclaje adecuado de materiales y la gestión
-                        responsable de residuos.
-                    </p>
-                </article>
-                <article class="card">
-                    <h2>Historia</h2>
-                    <p>
-                        Centro de reparación de coliciones automotríz fundado en 2024,5. **Innovación y Actualización**:
-                        Dado que la tecnología automotriz avanza constantemente, los
-                        talleres deben mantenerse actualizados. Esto implica capacitación continua para los técnicos y
-                        la adopción de nuevas técnicas y herramientas.</p>
-                </article>
-            </div> -->
-
-        </div>
-    </section>
-
-    <main id="servicios">
-        <div class="margin">
-
-            <!-- <h2>Procesos</h2> -->
-
-            <!-- <div class="cont_tarjetas_servicios">
-
-                <article class="tarjeta_servicios">
-
-                    <img src="img/step1.svg" alt="">
-
-                    <article class="servicios_descripcion">
-                        <h3>Diagnóstico</h3>
-                        <p>Un grupo de profesionales estará dispuesto a brindarte el mejor servicio</p>
-                    </article>
-
-                </article>
-
-                <article class="tarjeta_servicios">
-
-                    <img src="img/step2.svg" alt="">
-                    <article class="servicios_descripcion">
-                        <h3>Latonería</h3>
-                        <p>Un grupo de profesionales estará dispuesto a brindarte el mejor servicio</p>
-                    </article>
-
-                </article>
-
-                <article class="tarjeta_servicios">
-                    <img src="img/step3.svg" alt="">
-                    <article class="servicios_descripcion">
-                        <h3>Pintura</h3>
-                        <p>Personal capacitado en las últimas tecnologías en pintura</p>
-                    </article>
-
-                </article>
-
-                <article class="tarjeta_servicios">
-
-                    <div class="cont_img_servicios">
-                        <img src="img/step4.svg" alt="">
-                        <article class="servicios_descripcion">
-                            <h3>Entrega</h3>
-                            <p>Cuidamos cada detalle para que el cliente satisfacción</p>
-                        </article>
-                    </div>
-                </article>
-            </div> -->
-        </div>
-
-    </main>
-
-    <section id="proyectos">
-
-        <div class="margin">
-
-            <!-- <h2 class="section_title">Proyectos</h2> -->
-<!-- 
-            <div class="cont-proyectos">
-
-                <article class="contain_img_proyect">
-                    <img src="img/proyecto-1.jpg" alt="">
-                </article>
-
-                <article class="txtCont-proyectos">
-                    <p>
-                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis reprehenderit odit autem
-                        harum, facilis molestiae quisquam quis, repellat tempore veritatis quo ad velit, temporibus
-                        omnis rem pariatur excepturi quibusdam odio?
-                    </p>
-                </article>
-
-            </div> -->
-
-        </div>
-
-    </section>
-
-    <section id="blog">
-
-        <div class="margin">
-
-            <!-- <h2 class="section_title">Blog</h2> -->
-
-            <!-- <div class="testimonial-slider">
-
-
-                
-                <div class="testimonial-list" role="region" aria-label="Testimonials">
-
-                    
-                    <div class="testimonial">
-                        Bootstrap Icon
-                        <i class="bi bi-quote"></i>
-
-                        <blockquote>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                            quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-                            nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-                            consectetur aliquam ab incidunt!
-                        </blockquote>
-
-                        
-                        <div class="user-info">
-                            <img src="https://placehold.co/48?text=1" alt="" />
-                            <div class="user-details">
-                                <p class="name">John Doe</p>
-                                <p class="company">CEO, Company XYZ</p>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="testimonial">
-                        Bootstrap Icon
-                        <i class="bi bi-quote"></i>
-
-                        <blockquote>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                            quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-                            nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-                            consectetur aliquam ab incidunt!
-                        </blockquote>
-
-                       
-                        <div class="user-info">
-                            <img src="https://placehold.co/48?text=2" alt="" />
-                            <div class="user-details">
-                                <p class="name">John Doe</p>
-                                <p class="company">CEO, Company XYZ</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                    <div class="testimonial">
-                        Bootstrap Icon
-                        <i class="bi bi-quote"></i>
-
-                        <blockquote>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
-                            quos laborum nesciunt, eveniet illum eum neque vitae perspiciatis
-                            nemo quo, molestias placeat sunt dignissimos nulla. Omnis
-                            consectetur aliquam ab incidunt!
-                        </blockquote>
-
-                       
-                        <div class="user-info">
-                            <img src="https://placehold.co/48?text=3" alt="" />
-                            <div class="user-details">
-                                <p class="name">Carlos Celis</p>
-                                <p class="company">CEO, Company XYZ</p>
-                            </div>
-                        </div>
-                    </div>
-                   
-                </div>
-               
-                <button class="nav prev" aria-label="Previous Testimonial">
-                    <i class="bi bi-chevron-left"></i>
-                </button>
-
-                <button class="nav next" aria-label="Next Testimonial">
-                    <i class="bi bi-chevron-right"></i>
-                </button>
-              
-                <div class="dots-container"></div>
-               
-            </div> -->
-
-        </div>
-    </section>
-
-    <footer>
-
-        <div class="margin">
-
-            <!-- <div class="grid-footer">
-                <article>
-                    <ol class="items-footer">
-                        <li><i class="fa-solid fa-location-dot"></i><a href="">Dirección: <span>Calle 49 # 35 -
-                                    63</span></a></li>
-                        <li><i class="fa-solid fa-phone"></i><a href="">Contacto: <span>254 3636</span></a></li>
-                        <li><i class="fa-solid fa-clock"></i></i><a href="">Horarios: <span>Lunes a viernes de 08:00AM a
-                                    06:00PM</span></a></li>
-                        <li><i class="fa-solid fa-envelope"></i></i><a href="">tallerjm@gmail.com</a></li>
-                    </ol>
-                </article>
-                <article>
-                    <ol class="items-footer">
-                        <li><a href="">Términos garantías</a></li>
-                        <li><a href="">Términos y condiciones</a></li>
-                        <li><a href="">PQR's</a></li>
-
-                    </ol>
-                </article>
-                <article class="contain-footer">
-                    <h3>Formulario de registro</h3>
-                    <form action="" class="form-footer">
-                        <div class="form-group">
-                            <input type="text">
-                        </div>
-                        <div class="form-group">
-                            <input type="text">
-                        </div>
-                        <div class="form-group">
-                            <input type="email">
-                        </div>
-                        <div class="form-group">
-                            <input type="password">
-                        </div>
-                        <div class="form-group">
-                            <button type="button">Cancelar</button>
-                            <button type="submit">Guardar</button>
-                        </div>
-                    </form>
-                </article>
-                
-            </div> -->
-        </div>
-        <!-- <article class="footer">
-            <ol class="flex-footer">
-                <li>Todos los derechos reservados</li>
-                <li><a href="">LogisSoft 2024</a></li>
-            </ol>
-        </article> -->
-
-    </footer>
+   

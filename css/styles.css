@@ -21,8 +21,7 @@ i {
 }
 
 body {
-    background: rgb(124, 93, 55);
-    background: radial-gradient(circle, rgba(124, 93, 55, 0.6811099439775911) 0%, rgba(34, 40, 46, 0.8379726890756303) 100%);
+    background: var(--mainColor);
 }
 
 .margin {
@@ -38,6 +37,25 @@ body {
 .card {
     border-radius: 8px;
     padding: 1rem;
+
+    .title-card {
+        font-size: 1.2em;
+        color: var(--dot-color);
+        letter-spacing: 0.2rem;
+        padding: 10px 0;
+    }
+
+    p {
+        text-align: justify;
+        color: var(--txtParrafo);
+    }
+
+    .btn-action {
+        margin-top: 12px;
+        background-color: transparent;
+        padding: 10px 15px;
+        border-radius: 18px;
+    }
 }
 
 .section_title {
@@ -46,11 +64,51 @@ body {
     padding-bottom: 1em;
 }
 
+.sub-titles {
+    font-size: 1.2em;
+    color: var(--dot-color);
+    letter-spacing: 0.2rem;
+    padding: 10px 0;
+    font-family: Poppins, sans-serif;
+}
+
+.parrafo-txtDescrip {
+    color: var(--txtParrafo);
+    text-align: justify;
+    font-size: 1.1em;
+    font-family: Roboto, sans-serif;
+    line-height: 1.4em;
+}
+
+.txtSpecial {
+    color: var(--txtPrincipal);
+    font-size: 1.4em;
+}
+
+.btn {
+    color: var(--light-color);
+    padding: 12px 18px;
+    border-radius: 8px;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.btn-success {
+    background-color: var(--paynes-gray);
+}
+
+.btn-danger {
+    background-color: var(--danger);
+}
+
 
 header {
     width: 100%;
     height: 100vh;
-    background-image: url(../img/fondo-presentation.jpg);
+    background-image: url(../img/header-img.jpg);
+    /* background-image: url(../img/freepik__upload__18295.png); */
     background-position: center;
     background-size: cover;
     position: relative;
@@ -201,7 +259,7 @@ header {
             justify-items: center;
 
             .slogan {
-                color: var(--txtSlogan);
+                color: var(--txtTitulo);
                 font-size: 1.2em;
                 font-weight: 600;
                 letter-spacing: 0.1em;
@@ -209,22 +267,22 @@ header {
 
             h1 {
                 font-size: 3.5em;
-                color: var(--muted-color);
+                color: var(--txtTitulo);
 
                 font-family: "Poppins", system-ui;
                 font-weight: 700;
 
                 span {
-                    color: #0415ff;
+                    color: var(--txtPrincipal);
                     font-size: 1.3em;
-                    text-shadow: rgb(4, 255, 255) 1px 0 10px;
+                    text-shadow: rgb(255, 255, 255) 1px 0 10px;
                     font-family: "Poppins", system-ui;
                     font-weight: 700;
                 }
             }
 
             .slogan-descrip {
-                color: var(--txtPrincipal);
+                color: var(--txtTitulo);
                 font-size: 1.5em;
                 text-align: center;
                 font-weight: 700;
@@ -241,68 +299,63 @@ header {
 
 #nosotros {
 
-    .fotos-instalaciones {
+    .margin {
 
-        margin-bottom: 15px;
-
-        .cont-slider {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(15em, 1fr));
-
-            .fondo {
-                height: 170px;
-                width: 170px;
-                background-color: rgb(184, 173, 173);
-                padding: var(--espacioPadding);
-
-                overflow: hidden;
-
-                .rombo {
-                    height: 120px;
-                    width: 120px;
-                    background-color: rgb(35, 136, 97);
-                    transform: rotate(45deg);
-                    position: relative;
-                }
-
-                img {
-                    position: absolute;
-                    top: 26px;
-                    left: 9px;
-                    transform: rotate(-45deg);
-                }
-            }
-        }
-
-        .contain_img {
-
-            img {
-                width: 100%;
-            }
-        }
-    }
-
-    .content-cards-rows {
-
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
-        gap: 1em;
+        margin: 0;
 
         .card {
-            background-color: #c7c4c4;
+            padding: 0 0 20px;
+        }
+
+        .content-grid-twocolumns {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(21em, 1fr));
+            justify-content: space-between;
+            align-items: center;
+            gap: 1em;
+
+
+            .fotos-instalaciones {
+                width: 100%;
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .content-cards-rows {
+
+                .card {
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+                    margin-top: 0.8em;
+
+                    .title-card {
+                        border-left: 2px solid grey;
+                        padding-left: 0.7em;
+                    }
+
+                    p {
+                        padding: 8px 0;
+                    }
+                }
+            }
+
         }
     }
+
+
 }
 
 #servicios {
-    background-image: url(../img/fondo_servicios.jpg);
+    background-image: url(../img/fondo-parallax.jpg);
     background-position: center;
     background-size: cover;
 
     h2 {
         color: var(--txtTitulo);
         text-align: center;
-        padding: 2em 0 0.8em 0;
+        padding: 1em 0 0.8em 0;
     }
 
     .cont_tarjetas_servicios {
@@ -388,6 +441,10 @@ header {
             transition: transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
+        .testimonial img {
+            width: 90px;
+        }
+
         .testimonial .bi-quote {
             font-size: 4rem;
             color: var(--sunglow);
@@ -438,7 +495,7 @@ header {
             width: 42px;
             height: 42px;
             font-size: 1.5rem;
-            border-radius: 50%;
+            /* border-radius: 50%; */
             background-color: var(--light-color);
             color: var(--paynes-gray);
             transition: 0.3s;
@@ -487,13 +544,13 @@ header {
 }
 
 footer {
-    background-color: var(--space-cadet);
+    background-color: #0F161E;
     width: 100%;
 
     .grid-footer {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(12em, 1fr));
-        gap: 1em;
+        grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
+        gap: 0.8em;
         align-items: center;
         justify-content: center;
 
@@ -512,7 +569,7 @@ footer {
 
         .contain-footer {
             padding: 15px 20px;
-            background-image: url(../img/fondo-image.jpg);
+            background-image: url(../img/fondo-parallax.jpg);
             background-position: center;
             background-size: cover;
             width: calc(100% - 1%);
@@ -677,6 +734,8 @@ footer {
 
     }
 
+    #nosotros {}
+
     #servicios {
 
 
@@ -689,34 +748,34 @@ footer {
     #proyectos {
 
         .cont-proyectos {
-            background-color: blue;
+
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(25em, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(28em, 1fr));
             justify-content: space-between;
             justify-items: end;
             align-items: center;
             align-content: center;
             gap: 1.1em;
 
-            .contain_img_proyect img {
-                width: 300px;
-            }
+            .contain_img_proyect img {}
 
             .txtCont-proyectos {}
 
         }
 
-
-
     }
 
-    .margin {
+    footer {
 
-        .grid-footer {
-            justify-items: center;
-            justify-content: center;
+        .margin {
+
+            .grid-footer {
+                justify-items: center;
+                justify-content: center;
+            }
         }
     }
+
 }
 
 @media (width >=992px) {
@@ -748,6 +807,39 @@ footer {
 
         .banner {}
     }
+
+    #nosotros {
+
+        .margin {
+
+            padding: var(--higthEspacioPadding);
+
+            .content-grid-twocolumns {
+
+                grid-template-columns: repeat(auto-fill, minmax(27em, 1fr));
+                gap: 4em;
+            }
+        }
+    }
+
+    #proyectos {
+
+        .margin {
+
+            padding: var(--higthEspacioPadding);
+
+            .cont-proyectos {
+
+                gap: 4em;
+
+                .contain_img_proyect img {}
+
+                .txtCont-proyectos {}
+
+            }
+
+        }
+    }
 }
 
 @media (width >=1200px) {
@@ -762,9 +854,7 @@ footer {
             }
         }
 
-        .banner {
-            
-        }
+        .banner {}
     }
 
 }
