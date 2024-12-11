@@ -4,28 +4,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <title>Document</title>
 </head>
 
 <body>
-    <article>
-        Excelencia en la Reparación:
-        3. **Atención al Cliente**: Los talleres de reparación de colisiones deben ofrecer un
-        excelente
-        servicio al cliente. Esto implica comunicación clara, estimaciones precisas, plazos de
-        entrega
-        cumplidos y satisfacción del cliente.
+    <header class="headerCorp">
 
-        4. **Profesionalismo y Ética**: El taller debe operar de manera ética y profesional. Esto
-        incluye tratar a los clientes con respeto, ser transparente sobre los costos y mantener
-        altos
-        estándares de integridad.
+        <div class="top-bar">
 
-        6. **Sostenibilidad**: Algunos talleres también se preocupan por minimizar su impacto
-        ambiental.
-        Pueden utilizar prácticas sostenibles, como el reciclaje adecuado de materiales y la gestión
-        responsable de residuos.
-    </article>
+            <div id="logo">
+                <a href="../index.html"><img src="../img/lOGOjM.png" alt=""></a>
+            </div>
+
+            <nav class="cont-menu">
+                <input type="checkbox" id="menu">
+                <label for="menu" class="menu-hamburguer">
+                    <span class="hamburguer"></span>
+                </label>
+
+                <ul class="nav-menu nav_items_corp">
+                    <li><a href="../index.php" class="active">Inicio</a></li>
+                    <li><a href="#nosotros">Nostros</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <div class="margin">
+
+        <article class="margin">
+            <h3>Misión</h3>
+            <p>
+                Proveer servicios de reparación de colisiones automotrices de alta calidad, asegurando la restauración completa y segura de los vehículos de nuestros clientes. Nos comprometemos a utilizar tecnología avanzada y materiales de la más alta calidad, brindando un servicio profesional y eficiente, y fomentando la confianza y satisfacción de nuestros clientes.
+            </p>
+        </article>
+
+        <article class="margin">
+            <h3>Visión</h3>
+            <p>
+                Ser el taller de reparación de colisiones automotrices líder en la región, reconocido por nuestra calidad excepcional, innovación constante y enfoque en la satisfacción del cliente. Aspiramos a establecer nuevos estándares en la industria, utilizando tecnologías de vanguardia y prácticas sostenibles, mientras cultivamos un ambiente de trabajo colaborativo y de desarrollo profesional para nuestros empleados.
+            </p>
+        </article>
+
+        <article class="margin">
+            <h3>Objetivos corporativos</h3>
+            <div>
+                <p>
+                    Minimizar el impacto ambiental utilizando materiales de primera calidad.
+                </p>
+            </div>
+                <div>
+                    <p>
+                        Implementar prácticas sostenibles, como el reciclaje adecuado de materiales y la gestión
+                    </p>
+                </div>
+                <div>
+                    <p>
+                        responsable de residuos.
+                    </p>
+                </div>
+            
+        </article>
+
+    </div>
+
+    <footer>
+
+        <div class="margin">
+
+            <div class="grid-footer">
+                <article>
+                    <div class="sub-titles">
+                        <h3>Datos</h3>
+                    </div>
+                    <ol class="items-footer">
+                        <li><i class="fa-solid fa-location-dot"></i><a href="">Dirección: <span>Calle 49 # 35 -
+                                    63</span></a></li>
+                        <li><i class="fa-solid fa-phone"></i><a href="">Contacto: <span>254 3636</span></a></li>
+                        <li><i class="fa-solid fa-clock"></i></i><a href="">Horarios: <span>Lunes a viernes de 08:00AM a
+                                    06:00PM <br>Sábados de 08:00AM a 02:00PM</span></a></li>
+                        <li><i class="fa-solid fa-envelope"></i></i><a href="">servicioalclientetallerjm@gmail.com</a>
+                        </li>
+                    </ol>
+                </article>
+                <article>
+                    <div class="sub-titles">
+                        <h3>Legales</h3>
+                    </div>
+                    <ol class="items-footer">
+                        <li><a href="views/terminos-garantias.html">Términos de servicio y garantías</a></li>
+                        <li><a href="views/terminos-condiciones.html">Términos y condiciones</a></li>
+                        <li><a href="">PQR's</a></li>
+
+                    </ol>
+                </article>
+                <article class="contain-footer">
+                    <h3 class="sub-titles">Formulario de registro</h3>
+                    <form action="" method="post" class="form-footer">
+                        <div class="form-group">
+                            <input type="text" placeholder="Ingresa tu nombre">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Ingresa tu email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" placeholder="Ingresa una contraseña">
+                        </div>
+                        <div class="form-group">
+                            <textarea id="comentario" name="comentario" rows="5" cols="53"
+                                placeholder="Déjanos tus comentarios">
+
+                            </textarea>
+                        </div>
+                        <div class="form_footer">
+                            <div class="form-group">
+                                <button type="button" class="btn btn-danger">Cancelar</button>
+                                <button type="submit" class="btn btn-success">Guardar</button>
+                            </div>
+                        </div>
+                        <!-- <?php
+
+                            $crearUsuario = new ControladorUsuarios();
+                            $crearUsuario -> ctrCrearUsuario();
+
+                        ?> -->
+                    </form>
+                </article>
+
+            </div>
+        </div>
+        <article class="footer">
+            <ol class="flex-footer">
+                <li><span>&#169; </span>Todos los derechos reservados</li>
+                <li><a href="">LogisSoft 2024</a></li>
+            </ol>
+        </article>
+
+    </footer>
 </body>
 
 </html>

@@ -20,6 +20,19 @@ i {
     color: var(--muted-color);
 }
 
+h2, 
+h3, 
+h4, 
+h5, 
+h6, 
+p {
+    color: var(--dot-color);
+}
+
+p {
+    line-height: 1.3em;
+}
+
 body {
     background: var(--mainColor);
 }
@@ -103,6 +116,9 @@ body {
     background-color: var(--danger);
 }
 
+.headerCorp {
+    height: 50vh;
+}
 
 header {
     width: 100%;
@@ -207,6 +223,7 @@ header {
                         padding: 0 26px;
                         font-size: 0.8em;
                         font-family: "Roboto", system-ui;
+                        font-weight: 700;
 
                         &:hover {
                             color: #ffc700;
@@ -297,6 +314,8 @@ header {
 
 }
 
+
+
 #nosotros {
 
     .margin {
@@ -359,7 +378,7 @@ header {
     }
 
     .cont_tarjetas_servicios {
-
+        max-width: 1400px;
         margin: auto;
         padding-bottom: 1.8em;
 
@@ -371,7 +390,7 @@ header {
         overflow: hidden;
 
         .tarjeta_servicios {
-
+            width: 18em;
             position: relative;
 
             img {
@@ -385,13 +404,13 @@ header {
                 width: calc(100% - 20%);
 
                 h3 {
-                    color: var(--dot-color);
+                    color: var(--light-color);
                 }
 
                 p {
 
                     font-size: 0.8rem;
-                    color: var(--txtParrafo);
+                    color: var(--light-color);
                 }
             }
 
@@ -551,11 +570,10 @@ footer {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(22em, 1fr));
         gap: 0.8em;
-        align-items: center;
-        justify-content: center;
+        
 
         .items-footer li {
-            padding: 4px 0;
+            padding: 10px 0;
 
             i {
                 font-size: 0.8rem;
@@ -588,6 +606,9 @@ footer {
                         height: 100%;
                         width: 100%;
                         padding: 0 10px;
+                    }
+                    textarea {
+                        width: 100%;
                     }
                 }
             }
@@ -692,6 +713,9 @@ footer {
                     display: none;
                 }
 
+                .nav_items_corp li a {
+                    color: white;
+                }
 
                 .nav-menu {
                     position: relative;
@@ -768,8 +792,9 @@ footer {
     footer {
 
         .margin {
-
+            max-width: 1766px;
             .grid-footer {
+                grid-template-columns: repeat(auto-fill, minmax(27em, 1fr));
                 justify-items: center;
                 justify-content: center;
             }
